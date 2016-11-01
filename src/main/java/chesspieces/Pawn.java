@@ -1,8 +1,10 @@
 package chesspieces;
 
+import board.Board;
 import board.Position;
 import util.Color;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,7 +19,10 @@ public class Pawn extends Piece {
     }
 
     @Override
-    public List<Position> getAvailableMoves(Position position) {
+    public List<Position> getAvailableMoves(Board board, Position position) {
+
+        List<Position> moves = new ArrayList<>();
+
         return null;
     }
 

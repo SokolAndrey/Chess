@@ -1,6 +1,7 @@
 package board;
 
 import lombok.Data;
+import lombok.ToString;
 
 /**
  * @author asokol

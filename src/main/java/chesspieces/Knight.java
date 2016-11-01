@@ -1,5 +1,6 @@
 package chesspieces;
 
+import board.Board;
 import board.Position;
 import util.Color;
 
@@ -17,7 +18,7 @@ public class Knight extends Piece {
     }
 
     @Override
-    public List<Position> getAvailableMoves(Position position) {
+    public List<Position> getAvailableMoves(Board board, Position position) {
         return null;
     }
 

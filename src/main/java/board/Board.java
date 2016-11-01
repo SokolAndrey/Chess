@@ -86,6 +86,16 @@ public class Board {
         }
     }
 
+
+    public Cell getPosition(int x, int y) {
+        return cells[x][y];
+    }
+
+    public Cell getPosition(String coordinate) {
+        return null;
+    }
+
+
     public String toString() {
         return Arrays.stream(cells)
                 .map(line -> Arrays.stream(line)
@@ -99,7 +109,9 @@ public class Board {
                             return res;
                         })
                         .collect(Collectors.joining("_")))
-                .collect(Collectors.joining("\n"));
+                .collect(Collectors.joining("\n")) +
+                "\nwhite king is here: " + whiteKingPosition +
+                "\nblack king is here: " + blackKingPosition;
     }
 
 }

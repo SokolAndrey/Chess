@@ -1,5 +1,6 @@
 package chesspieces;
 
+import board.Board;
 import board.Position;
 import util.Color;
 
@@ -25,6 +26,6 @@ public abstract class Piece {
         this.color = color;
     }
 
-    public abstract List<Position> getAvailableMoves(Position position);
+    public abstract List<Position> getAvailableMoves(Board board, Position position);
 
 }
